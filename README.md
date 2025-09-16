@@ -5,9 +5,11 @@
 
 This study addresses binary classification of faces into real and fake (GAN-generated). The goal is to build and evaluate neural network models capable of distinguishing authentic from synthetic faces with reliable accuracy for use in security, social media integrity, and content moderation.
 
+
 ## Problem Description 🧩
 
 Detecting fake faces, often produced by GANs, is challenging and high-stakes. Robust classification helps reduce misinformation and abuse while supporting trust and safety systems.
+
 
 ## Solution Strategy 🧪
 
@@ -16,6 +18,7 @@ Detecting fake faces, often produced by GANs, is challenging and high-stakes. Ro
 - Apply fine-tuning on pretrained CNNs and train a Custom CNN for comparison.
 
 - Use standard ML practice: preprocessing, EDA, k-fold validation, training, fine-tuning, evaluation, plus ANOVA for statistical significance across models.
+
 
 ## Data 🗂️
 
@@ -40,16 +43,6 @@ Note: Final training, fine-tuning, and evaluation in this repo focus on the smal
 
 ![image 2](https://github.com/ChrisXioannou/Face-Classification-with-Neural-Networks/blob/main/Images/2.jpg)
 
-
-**Folder structure (example):**
-
-/content/smallSet/
-├── real/
-│   ├── image1.jpg
-│   └── ...
-└── fake/
-    ├── image1.jpg
-    └── ...
 
 ## Models 🛠️
 
@@ -84,6 +77,7 @@ p-value: 0.0000
 Conclusion: Performance differences are statistically significant.
 
 Final choice: InceptionV3 (fine-tuned) as the recommended model for this task.
+
 
 ## How to Use 🚀
 
