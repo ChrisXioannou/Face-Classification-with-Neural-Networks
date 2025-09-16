@@ -1,10 +1,4 @@
 # Face-Classification-with-Neural-Networks
-Face Classification with Neural Networks
-testing 123
-![Network Diagram](https://github.com/ChrisXioannou/HomeLabDirectory/blob/main/assets/diagam.png)
----------------------------
-
-# Face-Classification-with-Neural-Networks
 
 
 ## Abstract 🔍
