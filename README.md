@@ -39,6 +39,7 @@ Test: 40 images (10%)
 
 Note: Final training, fine-tuning, and evaluation in this repo focus on the small subset due to compute constraints.
 
+
 ![Image 1](https://github.com/ChrisXioannou/Face-Classification-with-Neural-Networks/blob/main/Images/1.jpg)
 
 ![image 2](https://github.com/ChrisXioannou/Face-Classification-with-Neural-Networks/blob/main/Images/2.jpg)
