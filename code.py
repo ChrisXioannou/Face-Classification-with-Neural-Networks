@@ -22,7 +22,7 @@ import numpy as np
 import cv2
 from sklearn.model_selection import train_test_split
 
-# 1️⃣ Extract Dataset
+# 1️ Extract Dataset
 zip_path = "/content/smallSet.zip"  # To Change name if needed
 extract_path = "/content/smallSet"
 
@@ -34,8 +34,8 @@ print(f"Files extracted to: {extract_path}")
 
 """TRAIN - TEST SPLIT"""
 
-# 2️⃣ Load Images into X (Features) and y (Labels)
-image_size = (299, 299)  # ⬅️ Change this
+# 2️ Load Images into X (Features) and y (Labels)
+image_size = (299, 299)  # ⬅ Change this
 
 X, y = [], []
 
@@ -60,10 +60,10 @@ y = np.array(y)
 print(f"Total images loaded: {len(X)}")
 print(f"Class distribution: {np.bincount(y)}")  # Check balance
 
-# 3️⃣ Split into Train (80%), Validation (10%), Test (10%)
+# 3️ Split into Train (80%), Validation (10%), Test (10%)
 X_trainval, X_test, y_trainval, y_test = train_test_split(X, y, test_size=0.10, random_state=42, stratify=y)
 
-# 🛠️ FIX: Correct stratification in second split
+#  FIX: Correct stratification in second split
 X_train, X_val, y_train, y_val = train_test_split(X_trainval, y_trainval, test_size=0.1111, random_state=42, stratify=y_trainval)
 
 print(f"Train set: {len(X_train)} images ({len(X_train)/len(X)*100:.1f}%)")
